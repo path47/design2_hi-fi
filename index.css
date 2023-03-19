@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+header{
+    width: 100%;
+    height : 60vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+.header-image{
+    position: absolute;
+    top: -20vh;
+    z-index: -1;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar li{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+
+.logo{
+    width: 10vw;
+}
+
+.head h3{
+    font-size: 2.1em;
+    color:white;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search{
+    display: flex;
+    width: 55vw;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 0;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    width: 50%;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search p{
+    color: gray;
+    border-right: 1px solid gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.search i:first-child{
+    font-size: 20px;
+    color: rgb(252, 111, 111);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+search i{
+    color: gray;
+    padding-left: 10px;
+}
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: black;
+  }
+
+.header-grid{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    height:75px;
+    
+}
+  
+  .restaurant-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  .restaurant-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: large;
+  }
+  
+  .restaurant-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .clkbtn {
+	height: 60px;
+	width: 150px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right,
+			rgb(255, 195, 110),
+			rgb(255, 146, 91));
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+    
+}
+
+.main_im{
+  max-width: 100%;
+ 
+}
+  
+.container,#contact{
+   background-color: black;
+   color: white;
+}
+.communication a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+  }  
+.communiation a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+.communication a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*for screen version*/
+@media screen and (min-width:980px){
+    .communication img{
+        width:1vw;
+        height:auto;
+    }
+}
+@media (max-width:1180px){
+    .communication img{
+        width:2vw;
+        height:auto;
+    }
+} 
+/*for mobilephone version*/
+@media (max-width:480px){
+    .communication img{
+        width:5vw;
+        height:auto;
+    }
+}
+/*for print version*/
+@media print{
+    .communication img{
+        width:1vw;
+        height:auto;
+    }
+}
